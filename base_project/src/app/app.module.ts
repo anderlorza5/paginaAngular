@@ -10,6 +10,7 @@ import { ComponenteComponent } from './components/componente/componente.componen
 import { FooterComponent } from './components/footer/footer.component';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { ProductoComponent } from './components/producto/producto.component';
+import { CompraComponent } from './pages/compra/compra.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProductoComponent } from './components/producto/producto.component';
     ComponenteComponent,
     FooterComponent,
     CarruselComponent,
-    ProductoComponent
+    ProductoComponent,
+    CompraComponent
   ],
   imports: [
     BrowserModule,
