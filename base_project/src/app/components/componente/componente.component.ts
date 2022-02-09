@@ -8,7 +8,8 @@ import { Component, OnInit, Input} from '@angular/core';
 export class ComponenteComponent implements OnInit {
   @Input()
   nombre:string="";
-
+  @Input()
+  id:number=0;
   @Input()
   descripcion:string="";
   precio:number=0;

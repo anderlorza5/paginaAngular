@@ -28,25 +28,25 @@
   </nav>
   <div class="row">
       <div class="col-lg-8 border-end">
-          <div class="pic"> <img src="https://images.pexels.com/photos/886317/pexels-photo-886317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""> </div>
+          <div class="pic"> <img src="{{imagen}}" alt=""> </div>
       </div>
       <div class="col-lg-4 ps-0">
           <div class="content">
               <div class="content-head">
                   <div class="d-flex align-items-center justify-content-between ">
-                      <p class="h-1 mb-0">Nombre</p>
+                      <p class="h-1 mb-0">{{nombre}}</p>
 
                   </div>
-                  <p class="text-white mb-3"><span class="textmuted">Minimum bid</span> 15 ETH</p>
+                  <p class="text-white mb-3"><span class="textmuted">Puja minima</span>{{precio}}</p>
               </div>
               <div class="content-body">
                   <div>
                       <div class="topnav mb-3">
-                          <div class="d-flex px-1 border-bottom"> <a href="#" class="active textmuted">Details</a> </div>
+                          <div class="d-flex px-1 border-bottom"> <a href="#" class="active textmuted">Detalles</a> </div>
                       </div>
                       <div class="text-white">
-                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nulla ad laborum quod libero, quam quos consequuntur </p>
-                          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem minima mollitia doloribus asperiores nihil, maiores aut iusto repudiandae doloremque veritatis. </p>
+                          <p>{{descripcion}}</p>
+
                       </div>
                       <div class=" text-white d-flex align-items-center justify-content-between">
                           <div class="d-flex flex-column">
@@ -70,7 +70,7 @@
                   <div class="d-flex align-items-center justify-content-between mt-3">
                       <div class="d-flex flex-column text-white">
                           <p class="mb-2 textmuted">Precio mínimo</p>
-                          <p class="mb-0 bid">0</p>
+                          <p class="mb-0 bid">{{precio}}</p>
                       </div>
                       <div class="d-flex flex-column text-white">
                           <p class="mb-2 textmuted">Disponible hasta</p>
