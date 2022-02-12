@@ -12,6 +12,7 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { CompraComponent } from './pages/compra/compra.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { CompraComponent } from './pages/compra/compra.component';
     FooterComponent,
     CarruselComponent,
     ProductoComponent,
-    CompraComponent
+    CompraComponent,
+
   ],
   imports: [
     BrowserModule,
