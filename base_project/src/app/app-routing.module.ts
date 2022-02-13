@@ -10,7 +10,7 @@ import { HomeComponentComponent } from './pages/home/home-component/home-compone
 const routes: Routes = [
   {path: '',
   component: HomeComponentComponent},
-  {path: 'compra/:?id',
+  {path: 'compra/:id',
   component: CompraComponent}
 ];
 
