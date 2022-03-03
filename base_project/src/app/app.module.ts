@@ -11,6 +11,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { CompraComponent } from './pages/compra/compra.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductoService} from './services/producto.service';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -26,11 +30,8 @@ import { CompraComponent } from './pages/compra/compra.component';
     CompraComponent,
 
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule,HttpClientModule],
+  providers: [ProductoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
