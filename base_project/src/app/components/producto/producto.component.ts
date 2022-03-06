@@ -35,7 +35,7 @@ export class ProductoComponent implements OnInit {
     getPuja(event:Event){
       event.preventDefault();
       this.puja=this.pujacontrl.value;
-      if (this.puja>this.pujaMaxima) {
+      if (this.puja>this.pujaMaxima && this.puja> this.precio)  {
         this.pujaMaxima=this.puja;
 
       }
