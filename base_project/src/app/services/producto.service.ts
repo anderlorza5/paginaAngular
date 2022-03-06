@@ -10,4 +10,9 @@ export class ProductoService {
   getProductoData() : Observable<Producto[]> {
     return this.http.get<Producto[]>(environment.API_URL + 'producto');
   }
+
+
+  getProductoId(id :number) : Observable<Producto> {
+    return this.http.get<Producto>(environment.API_URL + 'producto/'+id);
+  }
 }

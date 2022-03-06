@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { PRODUCTOS } from 'src/app/utils/productos';
+//import { PRODUCTOS } from 'src/app/utils/productos';
 import { Producto } from 'src/app/models/producto.model';
 import { ProductoService } from 'src/app/services/producto.service';
 
@@ -26,11 +26,17 @@ export class HomeComponentComponent implements OnInit {
   }*/
 
   //@Output() likeEvent = new EventEmitter<string>();
-  productos: Producto[]|null;
+
+  productos: Producto[]| null;
+  public devolverPro(){
+    return this.productos
+  }
+
+
 
  // @Input() filter: string | null;
   constructor(private _productoService: ProductoService) {
-    this.productos = null;
+    this.productos = [] ;
     //this._productoService.getProductoData().subscribe(apiBooks => this.productos=apiBooks);
     //this.filter = null;
 

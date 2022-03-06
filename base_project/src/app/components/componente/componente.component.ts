@@ -6,6 +6,7 @@ import { Component, OnInit, Input} from '@angular/core';
   styleUrls: ['./componente.component.css']
 })
 export class ComponenteComponent implements OnInit {
+
   @Input()
   nombre:string="";
   @Input()

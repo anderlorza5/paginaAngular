@@ -35,6 +35,7 @@ public class ProductoService : IProductoService
 
     public IEnumerable<ProductoDTO> GetAll()
     {
+        
         return _mapper.Map<IEnumerable<ProductoDTO>>(_context.productos.Select(x => x));
     }
 
