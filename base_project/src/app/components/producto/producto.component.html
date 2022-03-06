@@ -78,8 +78,8 @@
                       </div>
                   </div>
 
-                    <div><input type="number" name="puja" formControlName="puja"  ></div>
-                  <div class="btn btn-primary w-100 my-4" (click)="pujar()">PUJAR</div>
+                    <div><input type="number" name="puja" [formControl]="pujacontrl"  ></div>
+                  <div class="btn btn-primary w-100 my-4" (click)="getPuja($event)">PUJAR</div>
 
 
               </div>

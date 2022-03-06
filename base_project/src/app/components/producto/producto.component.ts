@@ -23,7 +23,7 @@ export class ProductoComponent implements OnInit {
   puja: number=0;
   pujaMaxima :number=0;
 
-  //pujacontrl = new FormControlName()
+  pujacontrl = new FormControl()
 
 
   constructor() { }
@@ -31,11 +31,15 @@ export class ProductoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-    public pujar(){
+
+    getPuja(event:Event){
+      event.preventDefault();
+      this.puja=this.pujacontrl.value;
       if (this.puja>this.pujaMaxima) {
         this.pujaMaxima=this.puja;
+
       }
-      console.log("sda")
+
     }
   }
 
