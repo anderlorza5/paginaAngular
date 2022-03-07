@@ -12,7 +12,7 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddControllersWithViews();
-        services.AddSingleton<SubastaContext>(_ =>
+        services.AddTransient<SubastaContext>(_ =>
             new SubastaContext(Configuration.GetConnectionString("DefaultConnection")));
 
 

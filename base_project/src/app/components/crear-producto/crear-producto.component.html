@@ -1,0 +1,42 @@
+
+
+<br><br><br><br>
+
+  <form  [formGroup]="productoForm">
+    <label >
+
+      <span>nombre</span>
+    <input
+      type="text"
+
+      formControlName="productoName">
+    </label>
+
+
+  <label>
+      <span>descripcion</span>
+      <input
+        type="text"
+
+        formControlName="productoDescripcion">
+    </label>
+    <label>
+      <span>precio</span>
+      <input
+        type="number"
+
+        formControlName="productoPrecio">
+    </label>
+    <label>
+      <span>imagen</span>
+      <input
+        type="text"
+
+        formControlName="improductoImagen">
+    </label>
+    <form novalidate (ngSubmit)="onSubmit()" [formGroup]="productoForm">
+      <button type="submit">crear </button>
+      </form>
+
+</form>
+

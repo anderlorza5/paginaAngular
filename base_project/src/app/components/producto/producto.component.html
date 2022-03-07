@@ -28,16 +28,16 @@
   </nav>
   <div class="row">
       <div class="col-lg-8 border-end">
-          <div class="pic"> <img src="{{imagen}}" alt=""> </div>
+          <div class="pic"> <img src="{{producto?.imagen}}" alt=""> </div>
       </div>
       <div class="col-lg-4 ps-0">
           <div class="content">
               <div class="content-head">
                   <div class="d-flex align-items-center justify-content-between ">
-                      <p class="h-1 mb-0">{{nombre}}</p>
+                      <p class="h-1 mb-0">{{producto?.nombre}}</p>
 
                   </div>
-                  <p class="text-white mb-3"><span class="textmuted">Puja actual        </span> {{pujaMaxima}}</p>
+                  <p class="text-white mb-3"><span class="textmuted">Puja actual        </span> {{producto?.precio}}</p>
               </div>
               <div class="content-body">
                   <div>
@@ -45,7 +45,7 @@
                           <div class="d-flex px-1 border-bottom"> <a href="#" class="active textmuted">Detalles</a> </div>
                       </div>
                       <div class="text-white">
-                          <p>{{descripcion}}</p>
+                          <p>{{producto?.descripcion}}</p>
 
                       </div>
                       <div class=" text-white d-flex align-items-center justify-content-between">
@@ -70,7 +70,7 @@
                   <div class="d-flex align-items-center justify-content-between mt-3">
                       <div class="d-flex flex-column text-white">
                           <p class="mb-2 textmuted">Precio mínimo</p>
-                          <p class="mb-0 bid">{{precio}}</p>
+                          <p class="mb-0 bid">{{producto?.precio}}</p>
                       </div>
                       <div class="d-flex flex-column text-white">
                           <p class="mb-2 textmuted">Disponible hasta</p>
@@ -78,8 +78,17 @@
                       </div>
                   </div>
 
-                    <div><input type="number" name="puja" [formControl]="pujacontrl"  ></div>
-                  <div class="btn btn-primary w-100 my-4" (click)="getPuja($event)">PUJAR</div>
+                    <div>
+                      <form [formGroup]="precioForm" (ngSubmit)="onSubmit()">
+
+                        <input style="width: 120px;" id="number" type="number" min="{{producto?.precio}}" formControlName="productosPrecio"><br><br>
+
+                        <button type="button" class="btn btn-warning btn-block btn-lg" type="submit">PUJAR</button>
+
+                        </form>
+
+                      </div>
+                  <div class="btn btn-primary w-100 my-4">PUJAR</div>
 
 
               </div>

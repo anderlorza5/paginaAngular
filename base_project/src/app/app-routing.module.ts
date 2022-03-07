@@ -5,13 +5,15 @@ import { ComponenteComponent } from './components/componente/componente.componen
 import {CarruselComponent} from './components/carrusel/carrusel.component';
 import { CompraComponent } from './pages/compra/compra.component';
 import { HomeComponentComponent } from './pages/home/home-component/home-component.component';
-
+import { CrearProductoComponent } from "./components/crear-producto/crear-producto.component";
 
 const routes: Routes = [
   {path: '',
   component: HomeComponentComponent},
   {path: 'compra/:id',
-  component: CompraComponent}
+  component: CompraComponent},
+  {path: 'crear',
+  component:  CrearProductoComponent }
 ];
 
 @NgModule({

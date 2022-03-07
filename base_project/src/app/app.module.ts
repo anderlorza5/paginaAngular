@@ -14,6 +14,7 @@ import { CompraComponent } from './pages/compra/compra.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductoService} from './services/producto.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CrearProductoComponent } from './components/crear-producto/crear-producto.component';
 
 
 
@@ -28,6 +29,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CarruselComponent,
     ProductoComponent,
     CompraComponent,
+    CrearProductoComponent,
 
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule,HttpClientModule],
